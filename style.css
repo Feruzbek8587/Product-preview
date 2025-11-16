@@ -5,14 +5,15 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 170px;
+    padding: 35px 350px;
+    padding-top: 65px;
 }
 
 .menu-btn {
@@ -28,14 +29,14 @@ nav ul {
     display: flex;
     align-items: center;
     justify-self: end;
-    gap: 40px;
+    gap: 70px;
 }
 
 nav ul a {
     text-decoration: none;
     color: hsl(236, 13%, 42%);
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 nav ul a:hover {
@@ -43,19 +44,17 @@ nav ul a:hover {
 }
 
 .main-article {
-    padding: 0 170px;
+    padding: 0 350px;
 }
 
 .top {
     display: grid;
-    grid-template-columns: 2.4fr 1.1fr;
-    gap: 35px;
+    grid-template-columns: 2.3fr 1.1fr;
+    gap: 45px;
 }
 
 .main-image-article .pc {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 .mobile {
     display: none;
@@ -67,13 +66,19 @@ nav ul a:hover {
 }
 
 .main-articles h1 {
+    width: 90%;
     margin: 0;
     padding-top: 25px;
-    font-size: 50px;
+    font-size: 55px;
     padding-right: 25px;
     color: hsl(240, 100%, 5%);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.p-btn {
+    width: 90%;
 }
 
 .p-btn p {
@@ -83,6 +88,8 @@ nav ul a:hover {
     padding-top: 25px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .p-btn button {
@@ -92,7 +99,7 @@ nav ul a:hover {
     outline: none;
     background-color: hsl(5, 85%, 63%);
     color: hsl(240, 100%, 5%);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 700;
     font-size: 14px;
     transition: 0.3s;
@@ -106,7 +113,7 @@ nav ul a:hover {
 
 .sub-articles {
     background-color: hsl(240, 100%, 5%);
-    padding: 30px 20px;
+    padding: 40px 30px;
 }
 
 .sub-articles p,
@@ -118,7 +125,7 @@ h2 {
 
 .sub-article {
     border-bottom: 1px solid hsl(233, 8%, 79%);
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .sub-article:last-child {
@@ -128,13 +135,14 @@ h2 {
 
 .sub-articles h2 {
     color: hsl(35, 77%, 62%);
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .sub-article h3 {
     color: hsl(36, 100%, 99%);
     padding-top: 30px;
     transition: 0.3s;
+    font-size: 25px;
 }
 
 .sub-articles h3:hover {
@@ -143,35 +151,32 @@ h2 {
 }
 
 .sub-article p {
-    padding-top: 7px;
+    padding-top: 10px;
     color: hsl(233, 8%, 79%);
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .bottom {
     display: flex;
     align-items: center;
     margin-top: 70px;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .bottom-article {
     display: grid;
     grid-template-columns: 1fr 2.5fr;      
-    width: 335px;
+    width: 31%;
 }
 
-.bottom-article:nth-child(2) {
-    margin: auto;
-}
-
-.bottom-article:nth-child(3) {
-    margin-left: auto;
+.bottom-article:first-child {
+    width: 27.5%;
 }
 
 .bottom-article img {
-    width: 100px;
+    width: 130px;
 }
 
 .image-article {
@@ -186,14 +191,14 @@ p {
 }
 
 .image-article span {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     color: hsl(5, 85%, 63%);
 }
 
 .image-article h3 {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 23px;
     color: hsl(240, 100%, 5%);
     transition: 0.3s;
 }
@@ -207,5 +212,6 @@ p {
     padding-top: 10px;
     color: hsl(236, 13%, 42%);
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
